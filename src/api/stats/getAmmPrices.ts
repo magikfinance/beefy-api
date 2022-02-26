@@ -7,12 +7,15 @@ import { fetchXPrices } from '../../utils/fetchXPrices';
 import { fetchCoinGeckoPrices } from '../../utils/fetchCoinGeckoPrices';
 
 import getNonAmmPrices from './getNonAmmPrices';
+
 import bakeryPools from '../../data/bakeryLpPools.json';
 import blizzardLpPools from '../../data/degens/blizzardLpPools.json';
 import alpacaLpPools from '../../data/alpacaLpPools.json';
 import cafePools from '../../data/cafeLpPools.json';
 import cakeLpPools from '../../data/cakeLpPools.json';
 import cakeLpV1Pools from '../../data/cakeLpV1Pools.json';
+import magikPools from '../../data/fantom/magikLpPools.json';
+import magikSinglePools from '../../data/fantom/magikPools.json';
 import kebabPools from '../../data/kebabLpPools.json';
 import bdollarSbdoPools from '../../data/bdollarSbdoLpPools.json';
 import boltBtdPools from '../../data/boltBtdLpPools.json';
@@ -322,6 +325,8 @@ const pools = [
   ...polypupBallLpPools,
   ...polypupLpPools,
   ...apePolyPools,
+  ...magikPools,
+  ...magikSinglePools,
   ...polyyeldL2LpPools,
   ...polyyeldApeLpPools,
   ...polyyeldQuickLpPools,
